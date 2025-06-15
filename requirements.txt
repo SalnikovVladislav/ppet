@@ -1,0 +1,12 @@
+Django==4.2
+djangorestframework
+djangorestframework-simplejwt
+python-dotenv
+requests
+psycopg2-binary
+stripe
+pytz
+channels
+channels_redis
+daphne
+
