@@ -1,4 +1,4 @@
 # 
-copy .env.example .env
-docker-compose build
-docker-compose up
+  copy .env.example .env
+  docker-compose build
+  docker-compose up
