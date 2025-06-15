@@ -15,7 +15,7 @@ class Command(BaseCommand):
         password = os.getenv('DJANGO_SUPERUSER_PASSWORD', 'secret-key')
 
         if not password:
-            self.stderr.write(self.style.ERROR("DJANGO_SUPERUSER_PASSWORD не задан в .env"))
+            self.stderr.write(self.style.ERROR("DJANGO_SUPERUSER_PASSWORD не задан"))
             return
 
         if not User.objects.filter(username=username).exists():
